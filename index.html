@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ffffff%22></rect><path d=%22M22.70 74.30L13.88 74.30L13.88 25.70L22.70 25.70L22.70 46.04L32.60 46.04L32.60 25.70L41.48 25.70L41.48 74.30L32.60 74.30L32.60 52.34L22.70 52.34L22.70 74.30ZM61.40 74.30L54.02 74.30L47.12 25.70L54.56 25.70L58.58 57.20L63.62 25.82L69.68 25.82L74.84 57.20L78.80 25.70L86.12 25.70L79.34 74.30L72.14 74.30L66.74 41.72L61.40 74.30Z%22 fill=%22%23ff0000%22></path></svg>" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HWAN DEV - MY PORFOLIO</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Khi Vào Trang Web -->
+    <!-- header và navbar -->
+    <header class="header" id="header">
+        <nav class="nav container padd-15">
+            <a href="#" class="nav-logo">
+                <h2>Hwan</h2>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#trangchu" class="nav-link active-link">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#banthan" class="nav-link">VỀ TÔI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dichvu" class="nav-link">DỊCH VỤ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kinhnghiem" class="nav-link">KINH NGHIỆM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#lienhetoi" class="nav-link">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+            <div class="nav-btns">
+                <i class="fa-solid fa-gear fa-spin change-theme" id="theme-button"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="home" id="trangchu">
+            <div class="container">
+                <div class="intro">
+                    <img style="width: 110px;"  src="./assets/img/man.png" alt="Hwan">
+                    <h1 class="author-name">Hwan Jr.</h1>
+                    <p >Chào các bạn, mình là <span class="type"></span></p>
+                    <ul  class="social-icons">
+                        <li><a href="https://www.instagram.com/hunglamquocpkvan/"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://www.facebook.com/toivaban50745/"><i class="lni lni-facebook-original"></i></a></li>
+                        <li><a href="https://discord.gg/C5rJAjHM"><i class="lni lni-discord"></i></a></li>
+                        <li><a href="https://github.com/hlam812003"><i class="lni lni-github-original"></i></a></li>
+                    </ul>
+                    <div>
+                        <button  href="#" class="btn btn-ripple">Thuê Tôi</button>
+                    </div>
+                    <div class="scroll-down">
+                        <a href="#banthan" class="mouse-wrapper">
+                            <span>Xem chi tiết</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="banthan">
+            <div class="container">
+                <h2 class="section-title padd-15"><i class="lni lni-user"></i> Về bản thân</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <img style="width: 180px;" src="./assets/img/programmer.png" alt="Hwan" class="tool-img">
+                        <span class="hwan-title" style="margin-left: 15%;">Hwan - 19 tủi 😊</span>
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <p><i class="fa-solid fa-quote-left"></i> Hello các bạn ! Mình là Hwan, một WEB DEVELOPER đến từ Việt Nam. Mình có nhiều kinh nghiệm về thiết kế website, xây dựng website... Ngoài ra mình còn làm về WordPress và Figma. <i class="fa-solid fa-quote-right"></i></p>
+                                    <button onclick="popUp()" id="effect-confetti" class="btn btn-ripple1 btn-effect-1 buttons-success">Tải CV</button>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item">
+                                            <h4>HTML</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%; background-color: rgb(255, 166, 0);"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h4>CSS</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%; background-color: rgb(4, 0, 255);"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h4>JAVASCRIPT</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%; background-color: rgb(251, 255, 0);"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thumbs-up"></i>
+                        <div class="details">
+                            <h3 data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></h3>
+                            <p>Dự án đã hoàn thành</p>
+                        </div>
+                    </div>
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-users"></i>
+                        <div class="details">
+                            <h3 data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></h3>
+                            <p>Khách hàng hài lòng</p>
+                        </div>
+                    </div>
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-cup"></i>
+                        <div class="details">
+                            <h3 data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></h3>
+                            <p>Cuộc thi</p>
+                        </div>
+                    </div>
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-support"></i>
+                        <div class="details">
+                            <h3>24/7</h3>
+                            <p>Hỗ trợ Online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services section" id="dichvu">
+            <div class="container">
+                <h2 class="section-title padd-15" style="text-align: center;"><i class="lni lni-service"></i> Các gói dịch vụ</h2>
+                <div class="row">
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="border-bottom: 4px groove red; border-top: 4px groove red; background: rgb(250, 250, 250);">
+                            <span class="badge">Sale off 10%</span>
+                            <img class="service-icons" src="./assets/img/icon1.png" alt="">
+                            <h3>WEBSITE ĐƠN GIẢN</h3>
+                            <p>Chỉ với <span style="color: red;">$10</span> bạn sẽ có 1 trang website đơn giản và đẹp mắt</p>
+                            <div class="service-details">Xem chi tiết <i class="lni lni-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="lni lni-close modal-close-btn"></i>
+                            <h3><i class="lni lni-website"></i> WEBSITE ĐƠN GIẢN</h3>
+                            <p>Bạn sẽ được những quyền lợi nào sau đây?</p>
+                            <ul>
+                                <li><i class="lni lni-checkmark-circle"></i> Giao diện đẹp, cơ bản</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Thời gian nhận: 6 <i class="lni lni-arrow-right" style="color: black;"></i> 8 ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="border-bottom: 4px groove red; border-top: 4px groove red; background: rgb(250, 250, 250);">
+                            <img class="service-icons" src="./assets/img/icon3.png" alt="">
+                            <span class="badge">Sale off 15%</span>
+                            <h3>WEBSITE CAO CẤP</h3>
+                            <p>Với <span style="color: red;">$80</span> bạn sẽ có một Website vô cùng đẹp mắt và tinh tế</p>
+                            <div class="service-details">Xem chi tiết <i class="lni lni-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="lni lni-close modal-close-btn"></i>
+                            <h3><i class="lni lni-website"></i> WEBSITE CAO CẤP</h3>
+                            <p>Bạn sẽ được những quyền lợi nào sau đây?</p>
+                            <ul>
+                                <li><i class="lni lni-checkmark-circle"></i> Giao diện đẹp mắt, hiện đại</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Thiết kế theo yêu cầu, sở thích của bạn</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Website độc quyền có 1 0 2</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Hỗ trợ khi Website có lỗi, sự cố</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Hướng dẫn host Website trên trình duyệt</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Thời gian nhận: 2 <i class="lni lni-arrow-right" style="color: black;"></i> 3 ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="border-bottom: 4px groove red; border-top: 4px groove red; background: rgb(250, 250, 250);">
+                            <span class="badge">Sale off 12%</span>
+                            <img class="service-icons" src="./assets/img/icon2.png" alt="">
+                            <h3>WEBSITE TẦM TRUNG</h3>
+                            <p>Chỉ với <span style="color: red;">$35</span> bạn sẽ có 1 trang website đơn giản và đẹp mắt</p>
+                            <div class="service-details">Xem chi tiết <i class="lni lni-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                            <i class="lni lni-close modal-close-btn"></i>
+                            <h3><i class="lni lni-website"></i> WEBSITE CAO CẤP</h3>
+                            <p>Bạn sẽ được những quyền lợi nào sau đây?</p>
+                            <ul>
+                                <li><i class="lni lni-checkmark-circle"></i> Giao diện dễ nhìn</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Thiết kế theo yêu cầu, sở thích của bạn</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Hỗ trợ khi Website có lỗi, sự cố</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Thời gian nhận: 3 <i class="lni lni-arrow-right" style="color: black;"></i> 5 ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                    <p><i class="lni lni-phone"></i> Hãy liên hệ tôi khi bạn cần nhé | <a href="#lienhetoi" class="btn btn-contact">Liên hệ tôi <i class="fas fa-paper-plane"></i></a></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="kinhnghiem">
+            <div class="container">
+                <h2 class="section-title padd-15"><i class="lni lni-graduation"></i> Học vấn và kinh nghiệm</h2>
+                <div class="row">
+                    <div class="education">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 - Hiện tại
+                                        </h3>
+                                        <h3 class="timeline-title">Đại học Sư phạm kỹ thuật</h3>
+                                        <p class="timeline-text">Chuyên ngành công nghệ thông tin</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2021
+                                        </h3>
+                                        <h3 class="timeline-title">Master HTML / CSS và JAVASCRIPT</h3>
+                                        <p class="timeline-text">Đặt mục tiêu cho sau này</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2018 - 2020
+                                        </h3>
+                                        <h3 class="timeline-title">Hoàn thành Udemy Course</h3>
+                                        <p class="timeline-text">Bước tiến đầu tiên</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 - Hiện tại
+                                        </h3>
+                                        <h3 class="timeline-title">Web Developer</h3>
+                                        <p class="timeline-text">HTML, CSS, JAVASCRIPT, REACTJS, ANGULA, NEXTJS, PHP, NODEJS...</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2021
+                                        </h3>
+                                        <h3 class="timeline-title">Front-End Developer</h3>
+                                        <p class="timeline-text">HTML, CSS, JAVASCRIPT, REACTJS, ...</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2018 - 2020
+                                        </h3>
+                                        <h3 class="timeline-title">Back-End Developer</h3>
+                                        <p class="timeline-text">PHP, NODEJS, MONGODB, MYSQL, ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title padd-15" style="text-align: center;"><i class="lni lni-files"></i> Portfolio</h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+                            <button type="button" class="active" data-filter="tatca">Tất cả</button>
+                            <button type="button" data-filter="coban">Website cơ bản</button>
+                            <button type="button" data-filter="tamtrung">Website tầm trung</button>
+                            <button type="button" data-filter="caocap">Website cao cấp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-item padd-15" data-category="coban">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/1.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website cơ bản</span>
+                        <h3 class="portfolio-item-title">Dự án đầu tiên</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="caocap">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/2.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website cao cấp</span>
+                        <h3 class="portfolio-item-title">Đồ án đại học</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="caocap">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/3.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website cao cấp</span>
+                        <h3 class="portfolio-item-title">Lana Del Rey Portfolio</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="tamtrung">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/4.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website tầm trung</span>
+                        <h3 class="portfolio-item-title">Website Ktisi Donjo Game</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="coban">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/5.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website cơ bản</span>
+                        <h3 class="portfolio-item-title">Website giới thiệu bản thân cơ bản</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="tamtrung">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/6.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Website tầm trung</span>
+                        <h3 class="portfolio-item-title">Website cửa hàng Laptop</h3>
+                        <span class="more-button">&hellip;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section our-clients">
+            <div class="container">
+                <h2 class="section-title padd-15"><i class="lni lni-comments"></i> Khách hàng và Feedbacks</h2>
+                <div class="swiper client-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex-center">
+                            <div class="client-img">
+                                <img src="./assets/img/avatar-1.svg" alt="">
+                            </div>
+                            <div class="client-details">
+                                <p><i class="fa-solid fa-quote-left"></i> Chào Hwan, tôi là Kì Anh ! Sau khi sử dụng dịch vụ của bạn, mọi thứ đều tuyệt vời. Hãy cố gắng tiếp tục phát huy nhé ! <i class="fa-solid fa-quote-right"></i></p>
+                                <h3><i class="lni lni-customer"></i> Nguyễn Kì Anh</h3>
+                                <span><i class="lni lni-handshake"></i> Khách hàng thân thiết</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex-center">
+                            <div class="client-img">
+                                <img src="./assets/img/avatar-2.svg" alt="">
+                            </div>
+                            <div class="client-details">
+                                <p><i class="fa-solid fa-quote-left"></i> Sản phẩm tuyệt vời ! Quá mãn nhãn. <i class="fa-solid fa-quote-right"></i></p>
+                                <h3><i class="lni lni-customer"></i> Trần Trung Hiếu</h3>
+                                <span><i class="lni lni-handshake"></i> Người sáng lập Ozone</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex-center">
+                            <div class="client-img">
+                                <img src="./assets/img/avatar-3.svg" alt="">
+                            </div>
+                            <div class="client-details">
+                                <p><i class="fa-solid fa-quote-left"></i> Quá đẹp mắt, hãy tiếp tục làm ra nhiều sản phẩm nữa nhé !!! <i class="fa-solid fa-quote-right"></i></p>
+                                <h3><i class="lni lni-customer"></i> Ngô Gia Long</h3>
+                                <span><i class="lni lni-handshake"></i> Khách hàng thân thiết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section book-resources-container">
+            <div class="container">
+                <h2 class="section-title padd-15" style="text-align: center;"><i class="lni lni-book"></i> Tài liệu học bổ ích</h2>
+                <div class="row">
+                    <div class="resources-item padd-15">
+                        <div class="resources-item-inner">
+                            <a class="book-container" href="https://www.amazon.com/dp/B08RR4RJYH?tag=uuid10-20" target="_blank"rel= "noreferrer noopener">
+                                <div class="book">
+                                <img
+                                    alt="Sách 1"
+                                    src="https://m.media-amazon.com/images/I/51aFb-S7zBL.jpg"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resources-item padd-15">
+                        <div class="resources-item-inner">
+                            <a class="book-container" href="https://www.amazon.com/JavaScript-Absolute-Beginners-Terry-McNavage/dp/1430272198" target="_blank"rel= "noreferrer noopener">
+                                <div class="book">
+                                <img
+                                    alt="Sách 2"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/51IENRwUhKL._SX404_BO1,204,203,200_.jpg"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resources-item padd-15">
+                        <div class="resources-item-inner">
+                            <a class="book-container" href="https://www.amazon.com/Backend-Developer-Notebook-Performance-Planning/dp/B0924CXGGH" target="_blank"rel= "noreferrer noopener">
+                                <div class="book">
+                                <img
+                                    alt="Sách 3"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/610jIGnr3FL.jpg"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="lienhetoi">
+            <div class="container">
+                <h2 class="section-title padd-15"><i class="lni lni-mailchimp"></i> Liên hệ tôi</h2>
+                <div class="row">
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Liên hệ qua số điện thoại</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon">
+                                        0123459324
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Liên hệ qua email</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon">
+                                        info@hwan.gmail.com
+                                    </i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="mailto:hlam812003@gamil.com" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <div class="contact-content">
+                                <input type="email" name="" id="" class="contact-input" required>
+                                <label for="" class="contact-label">Email</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content">
+                                <input type="number" name="" id="" class="contact-input" required>
+                                <label for="" class="contact-label">Số điện thoại</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content">
+                                <input type="text" name="" id="" class="contact-input" required>
+                                <label for="" class="contact-label">Bạn cần hỗ trợ về?</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content contact-area">
+                                <textarea cols="30" rows="10" name="" id="" class="contact-input" required></textarea>
+                                <label for="" class="contact-label">Tin nhắn của bạn</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-contact1">Gửi tin nhắn <i class="fa-solid fa-paper-plane"></i></a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="scroll__top flex-center">
+            <div class="lni lni-chevron-up"></div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="isme group">
+                    <h2>Hwan</h2>
+                    <p style="color: black;"><i class="fa-solid fa-share"></i> Front-End / UI / UX Developer</p>
+                </div>
+                <div class="hr"></div>
+                <div class="isme__info group">
+                    <h3 style="margin-left: 6%;"><i class="lni lni-diamond-alt"></i> Xem thêm</h3>
+                    <ul>
+                        <li><a href="#banthan">&centerdot; Về tôi</a></li>
+                        <li><a href="#dichvu">&centerdot; Dịch vụ</a></li>
+                        <li><a href="#kinhnghiem">&centerdot; Kinh nghiệm</a></li>
+                        <li><a href="#portfolio">&centerdot; Portfolio</a></li>
+                        <li><a href="#lienhe">&centerdot; Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+                <div class="follow group">
+                    <h3><i class="lni lni-share-alt-1"></i> Theo dõi tôi qua</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/toivaban50745/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://github.com/hlam812003"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/hunglamquocpkvan/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://discord.gg/SYEQpUBdVV"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright group">
+                @ 2022 From Hwan - VietNam With Luv
+            </div>
+        </footer>
+    </main>
+    <div class="customize-theme">
+        <div class="card">
+            <!-- <i class="lni lni-close modal-close-btns"></i> -->
+            <h2><i class="lni lni-grid-alt"></i> Thay đổi theo ý thích của bạn</h2>
+            <p>Chỉnh sửa kích cỡ chữ ( sẽ Update thêm )</p>
+            <div class="font-size">
+                <h3>Kích cỡ chữ</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="./assets/js/notify.js/js/notify.js"> </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://pro.crunchify.com/wp-content/themes/twentysixteen/js/typed.min.js" type="text/javascript"></script>
+    <script src="assets/js/purecounter/purecounter.js"></script>
+    <!-- <script src="./assets/js/typed.js/typed.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./assets/js/jquery/jquery-3.2.1.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#header");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+
+        let notyf = new Notyf({
+            duration: 5000,
+            dismissible: true,
+            position: { x: 'right', y: 'bottom' }, 
+            types: [{
+                type: 'home',
+                background: 'rgba(116, 116, 116, 0.518)',
+                icon: {
+                    className: 'fa fa-house text-white d-inline-block',
+                    tagName: 'i'
+                }
+            }]
+        });
+        notyf.success('Truy cập thành công')
+        notyf.open({
+            type: 'home',
+            message: 'Chào mừng bạn !!!'
+        });
+
+        var typed = new Typed(".type", {
+            strings: [
+                "Web Developer",
+                "UI / UX Developer",
+                "Freelancer"
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+
+        function popUp() {
+            swal({
+                title: "Chúc mừng 😘🤩",
+                text: "Bạn đã tải CV thành công !!!",
+                icon: "success",
+                button: "Thoát",
+                });
+        }
+
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 100 
+        });
+
+        // ScrollReveal().reveal('.header', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.home .intro .author-name', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.home .intro p', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.home .intro .type', { delay: 300, origin: 'left' }); 
+        ScrollReveal().reveal('.home .intro img', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.home .intro .social-icons', { delay: 300, origin: 'right' });
+        ScrollReveal().reveal('.home .intro .btn-ripple', { delay: 300, origin: 'right' });
+        ScrollReveal().reveal('.home .intro .scroll-down', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.about .section-title', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.about .about-img', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.about .about-content', { delay: 300, origin: 'right' });
+        ScrollReveal().reveal('.about .fact-item', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.services .section-title', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.services .service-item', { delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('.services .text', { delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('#kinhnghiem .section-title', { delay: 300, origin: 'left'});
+        ScrollReveal().reveal('.education .timeline-box .timeline', { delay: 300, origin: 'left'});
+        ScrollReveal().reveal('.experience .timeline-box .timeline', { delay: 300, origin: 'right'});
+        ScrollReveal().reveal('.portfolio .section-title', { delay: 300, origin: 'top'});
+        ScrollReveal().reveal('.portfolio .portfolio-filter', { delay: 300, origin: 'left'});
+        ScrollReveal().reveal('.portfolio .portfolio-item', { delay: 300, origin: 'bottom', interval: 6});
+        ScrollReveal().reveal('.our-clients .section-title', { delay: 300, origin: 'left'});
+        ScrollReveal().reveal('.our-clients .swiper-wrapper', { delay: 300, origin: 'right'});
+        ScrollReveal().reveal('.book-resources-container .section-title', { delay: 300, origin: 'top'});
+        ScrollReveal().reveal('.book-resources-container .resources-item', { delay: 300, origin: 'bottom'});
+        ScrollReveal().reveal('.contact .section-title', { delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.contact .contact-box .contact-data', { delay: 400, origin: 'left'});
+        ScrollReveal().reveal('.contact .contact-inputs', { delay: 400, origin: 'right'});
+    </script>
+    <script>
+        // const scrollToTop = document.querySelector('.scroll__top');
+
+        // window.addEventListener('scroll', function() {
+        // scrollToTop.classList.toggle('action', window.scrollY > 500);
+        // });
+
+        // scrollToTop.addEventListener('click', function scrollTop() {
+        // const c = document.documentElement.scrollTop || document.body.scrollTop;
+        // if (c > 0) {
+        //     window.requestAnimationFrame(scrollTop);
+        //     window.scrollTo(0, c - c / 8);
+        // }
+        // });
+
+        // scrollTop();
+        const scrollToTop = document.querySelector('.scroll__top');
+
+        window.addEventListener('scroll', function() {
+            scrollToTop.classList.toggle('action', window.scrollY > 500);
+        });
+
+        scrollToTop.addEventListener('click', () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+    </script>
+    <script>
+        var swiper = new Swiper(".client-swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script type="module">
+        import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+        function party() {
+            confetti()
+        }
+        document.getElementById('effect-confetti').addEventListener('click', party);
+    </script>
+</body>
+</html>
