@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="intro">
                     <img style="width: 110px;"  src="./assets/img/man.png" alt="Hwan">
-                    <h1 class="author-name">Hwan Jr.</h1>
+                    <h1 class="author-name">Lâm Quốc Hưng - 21110037</h1>
                     <p >Chào các bạn, mình là <span class="type"></span></p>
                     <ul  class="social-icons">
                         <li><a href="https://www.instagram.com/hunglamquocpkvan/"><i class="lni lni-instagram-original"></i></a></li>
@@ -75,7 +75,7 @@
                         <li><a href="https://github.com/hlam812003"><i class="lni lni-github-original"></i></a></li>
                     </ul>
                     <div>
-                        <button  href="#" class="btn btn-ripple">Thuê Tôi</button>
+                        <button  href="#" class="btn btn-ripple">Hợp Tác</button>
                     </div>
                     <div class="scroll-down">
                         <a href="#banthan" class="mouse-wrapper">
@@ -106,21 +106,21 @@
                                 <div class="skills padd-15">
                                     <div class="row">
                                         <div class="skill-item">
-                                            <h4>HTML</h4>
+                                            <h4>HTML/CSS/JS</h4>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 90%; background-color: rgb(255, 166, 0);"></div>
-                                                <div class="skill-percent">90%</div>
+                                                <div class="skill-percent">95%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h4>CSS</h4>
+                                            <h4>VueJS</h4>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 85%; background-color: rgb(4, 0, 255);"></div>
                                                 <div class="skill-percent">85%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h4>JAVASCRIPT</h4>
+                                            <h4>ReactJS</h4>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 75%; background-color: rgb(251, 255, 0);"></div>
                                                 <div class="skill-percent">75%</div>
@@ -314,14 +314,14 @@
         </section>
         <section class="portfolio section" id="portfolio">
             <div class="container">
-                <h2 class="section-title padd-15" style="text-align: center;"><i class="lni lni-files"></i> Portfolio</h2>
+                <h2 class="section-title padd-15" style="text-align: center;"><i class="lni lni-files"></i> Portfolio Của Mình</h2>
                 <div class="row">
                     <div class="portfolio-filter padd-15">
                         <div class="portfolio-filter-inner">
                             <button type="button" class="active" data-filter="tatca">Tất cả</button>
-                            <button type="button" data-filter="coban">Website cơ bản</button>
-                            <button type="button" data-filter="tamtrung">Website tầm trung</button>
-                            <button type="button" data-filter="caocap">Website cao cấp</button>
+                            <button type="button" data-filter="coban">Bài Tập</button>
+                            <button type="button" data-filter="tamtrung">Đồ Án</button>
+                            <!-- <button type="button" data-filter="caocap">Website cao cấp</button> -->
                         </div>
                     </div>
                 </div>
@@ -335,10 +335,10 @@
                         </div>
                         <span class="term">Website cơ bản</span>
                         <h3 class="portfolio-item-title">Dự án đầu tiên</h3>
-                        <a href="#"><span class="more-button">&hellip;</span></a>
+                        <a href="https://demo-web-app-nfpg.onrender.com/"><span class="more-button">&hellip;</span></a>
                     </div>
                 </div>
-                <div class="portfolio-item padd-15" data-category="caocap">
+                <!-- <div class="portfolio-item padd-15" data-category="caocap">
                     <div class="portfolio-item-inner">
                         <div class="portfolio-item-thumbnail">
                             <img src="./assets/img/2.svg" alt="">
@@ -359,8 +359,8 @@
                         <h3 class="portfolio-item-title">Lana Del Rey Portfolio</h3>
                         <span class="more-button">&hellip;</span>
                     </div>
-                </div>
-                <div class="portfolio-item padd-15" data-category="tamtrung">
+                </div> -->
+                <!-- <div class="portfolio-item padd-15" data-category="tamtrung">
                     <div class="portfolio-item-inner">
                         <div class="portfolio-item-thumbnail">
                             <img src="./assets/img/4.svg" alt="">
@@ -392,7 +392,7 @@
                         <h3 class="portfolio-item-title">Website cửa hàng Laptop</h3>
                         <span class="more-button">&hellip;</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="section our-clients">
@@ -715,6 +715,10 @@
             document.documentElement.scrollTop = 0;
         });
 
+        const getNewYearText = document.querySelector('.footer-copyright');
+        const newYear = new Date().getFullYear();
+
+        getNewYearText.innerHTML(`@${newYear} From Hwan - VietNam With Luv`)
     </script>
     <script>
         var swiper = new Swiper(".client-swiper", {
