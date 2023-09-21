@@ -835,7 +835,7 @@ h3 {
   transform: translateY(-40px);
 }
 
-.portfolio-item h3 {
+.portfolio-item-title {
   color: #fff;
   font-size: 1.25rem;
   margin: 0 0 0.98rem;
@@ -871,7 +871,7 @@ h3 {
   transform: translateY(0);
 }
 
-.portfolio-item:hover h3 {
+.portfolio-item-inner:hover .portfolio-item-title {
   opacity: 1;
   visibility: visible;
 }
