@@ -219,4 +219,7 @@ let Scrollbar = window.Scrollbar;
 
 Scrollbar.init(document.querySelector('body'));
 
+const getNewYearText = document.querySelector('.footer-copyright');
+const newYear = new Date().getFullYear();
 
+getNewYearText.innerHTML(`@${newYear} From Hwan - VietNam With Luv`)
