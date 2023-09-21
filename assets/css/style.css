@@ -845,6 +845,7 @@ h3 {
   transition: 0.3s;
   transform: translateY(30px);
   opacity: 0;
+  visibility: hidden;
 }
 
 .portfolio-item .more-button {
@@ -865,9 +866,14 @@ h3 {
   opacity: 0;
 }
 
-.portfolio-item-inner h3, .portfolio-item-inner:hover span {
+.portfolio-item-inner:hover span {
   opacity: 1;
   transform: translateY(0);
+}
+
+.portfolio-item:hover h3 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .our-clients {
