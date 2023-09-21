@@ -1,6 +1,8 @@
 const navMenu = document.querySelector('#nav-menu');
 const navToggle = document.querySelector('#nav-toggle');
 const navCloseBtn = document.querySelector('#nav-close');
+const getNewYearText = document.querySelector('.footer-copyright');
+const newYear = new Date().getFullYear();
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {
@@ -218,8 +220,5 @@ Bg3.addEventListener('click', () => {
 let Scrollbar = window.Scrollbar;
 
 Scrollbar.init(document.querySelector('body'));
-
-const getNewYearText = document.querySelector('.footer-copyright');
-const newYear = new Date().getFullYear();
 
 getNewYearText.innerHTML(`@${newYear} From Hwan - VietNam With Luv`)
