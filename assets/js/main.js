@@ -1,8 +1,89 @@
+const themeBg = document.querySelector('#theme-button');
+const themeModal = document.querySelector('.customize-theme');
+const fontSizes = document.querySelectorAll('.choose-size span');
+var root = document.querySelector(':root');
+// const Bg1 = document.querySelector('.bg-1');
+// const Bg2 = document.querySelector('.bg-2');
+// const Bg3 = document.querySelector('.bg-3');
 const navMenu = document.querySelector('#nav-menu');
 const navToggle = document.querySelector('#nav-toggle');
 const navCloseBtn = document.querySelector('#nav-close');
 const getNewYearText = document.querySelector('.footer-copyright');
+const body = document.body;
+const preloader = document.querySelector('.preloader');
 const newYear = new Date().getFullYear();
+
+body.classList.add('no-scroll');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    preloader.classList.add('hide');
+    body.classList.remove('no-scroll');
+    resetAndReveal();
+  }, 5000);
+});
+
+function resetAndReveal() {
+  // Clear previous instances
+  ScrollReveal().clean();
+
+  // Re-initialize ScrollReveal
+  ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 100
+  });
+
+  ScrollReveal().reveal('.home .intro .author-name', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.home .intro p', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.home .intro .type', { delay: 300, origin: 'left' }); 
+  ScrollReveal().reveal('.home .intro img', { delay: 300, origin: 'top' });
+  ScrollReveal().reveal('.home .intro .social-icons', { delay: 300, origin: 'right' });
+  ScrollReveal().reveal('.home .intro .btn-ripple', { delay: 300, origin: 'right' });
+  ScrollReveal().reveal('.home .intro .scroll-down', { delay: 300, origin: 'bottom' });
+  ScrollReveal().reveal('.about .section-title', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.about .about-img', { delay: 300, origin: 'left' });
+  ScrollReveal().reveal('.about .about-content', { delay: 300, origin: 'right' });
+  ScrollReveal().reveal('.about .fact-item', { delay: 300, origin: 'bottom' });
+  ScrollReveal().reveal('.services .section-title', { delay: 300, origin: 'top' });
+  ScrollReveal().reveal('.services .service-item', { delay: 300, origin: 'bottom'});
+  ScrollReveal().reveal('.services .text', { delay: 300, origin: 'bottom'});
+  ScrollReveal().reveal('#kinhnghiem .section-title', { delay: 300, origin: 'left'});
+  ScrollReveal().reveal('.education .timeline-box .timeline', { delay: 300, origin: 'left'});
+  ScrollReveal().reveal('.experience .timeline-box .timeline', { delay: 300, origin: 'right'});
+  ScrollReveal().reveal('.portfolio .section-title', { delay: 300, origin: 'top'});
+  ScrollReveal().reveal('.portfolio .portfolio-filter', { delay: 300, origin: 'left'});
+  ScrollReveal().reveal('.portfolio .portfolio-item', { delay: 300, origin: 'bottom', interval: 6});
+  ScrollReveal().reveal('.our-clients .section-title', { delay: 300, origin: 'left'});
+  ScrollReveal().reveal('.our-clients .swiper-wrapper', { delay: 300, origin: 'right'});
+  ScrollReveal().reveal('.book-resources-container .section-title', { delay: 300, origin: 'top'});
+  ScrollReveal().reveal('.book-resources-container .resources-item', { delay: 300, origin: 'bottom'});
+  ScrollReveal().reveal('.contact .section-title', { delay: 100, origin: 'left'});
+  ScrollReveal().reveal('.contact .contact-box .contact-data', { delay: 400, origin: 'left'});
+  ScrollReveal().reveal('.contact .contact-inputs', { delay: 400, origin: 'right'});
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  let moreButtons = document.querySelectorAll('.more-button');
+
+  moreButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          let href = e.target.parentElement.href;
+          const preloader = document.querySelector('.preloader');
+          const preloaderText = preloader.querySelector('.preloader__text');
+          preloaderText.textContent = 'Đang chuyển hướng...';
+          preloader.classList.remove('hide');
+          body.classList.add('no-scroll');
+
+          setTimeout(() => {
+              window.location.href = href;
+          }, 5000);
+      });
+  });
+});
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {
@@ -126,23 +207,13 @@ const filterContainer = document.querySelector('.portfolio-filter-inner'),
         });
       }
 
-
-const themeBg = document.querySelector('#theme-button');
-const themeModal = document.querySelector('.customize-theme');
-const fontSizes = document.querySelectorAll('.choose-size span');
-var root = document.querySelector(':root');
-const Bg1 = document.querySelector('.bg-1');
-const Bg2 = document.querySelector('.bg-2');
-const Bg3 = document.querySelector('.bg-3');
-
-
 const openThemeModal = () => {
-  themeModal.style.display = 'grid';
+  themeModal.classList.add("active");
 }
 
 const closeModalTheme = (e) => {
   if (e.target.classList.contains('customize-theme')) {
-    themeModal.style.display = 'none';
+    themeModal.classList.remove("active");
   }
 }
 
@@ -176,49 +247,45 @@ fontSizes.forEach(size => {
   });
 });
 
-let lightColorLightness;
-let whiteColorLightness;
-let darkColorLightness;
+// let lightColorLightness;
+// let whiteColorLightness;
+// let darkColorLightness;
 
 
-const changeBg = () => {
-  root.style.setProperty('--light-color-lightness', lightColorLightness);
-  root.style.setProperty('--white-color-lightness', whiteColorLightness);
-  root.style.setProperty('--dark-color-lightness', darkColorLightness);
-}
-Bg1.addEventListener('click', () => {
-  Bg1.classList.add('active');
-  Bg2.classList.remove('active');
-  Bg3.classList.remove('active');
-  window.location.reload();
-})
+// const changeBg = () => {
+//   root.style.setProperty('--light-color-lightness', lightColorLightness);
+//   root.style.setProperty('--white-color-lightness', whiteColorLightness);
+//   root.style.setProperty('--dark-color-lightness', darkColorLightness);
+// }
+// Bg1.addEventListener('click', () => {
+//   Bg1.classList.add('active');
+//   Bg2.classList.remove('active');
+//   Bg3.classList.remove('active');
+//   window.location.reload();
+// })
 
-Bg2.addEventListener('click', () => {
-  darkColorLightness = '95%';
-  whiteColorLightness = '20%';
-  lightColorLightness = '15%';
+// Bg2.addEventListener('click', () => {
+//   darkColorLightness = '95%';
+//   whiteColorLightness = '20%';
+//   lightColorLightness = '15%';
 
-  Bg2.classList.add('active');
-  Bg1.classList.remove('active');
-  Bg3.classList.remove('active');
-  changeBg();
+//   Bg2.classList.add('active');
+//   Bg1.classList.remove('active');
+//   Bg3.classList.remove('active');
+//   changeBg();
 
-});
+// });
 
-Bg3.addEventListener('click', () => {
-  darkColorLightness = '95%';
-  whiteColorLightness = '20%';
-  lightColorLightness = '0%';
+// Bg3.addEventListener('click', () => {
+//   darkColorLightness = '95%';
+//   whiteColorLightness = '20%';
+//   lightColorLightness = '0%';
 
-  Bg3.classList.add('active');
-  Bg2.classList.remove('active');
-  Bg1.classList.remove('active');
-  changeBg();
+//   Bg3.classList.add('active');
+//   Bg2.classList.remove('active');
+//   Bg1.classList.remove('active');
+//   changeBg();
 
-});
+// });
 
-let Scrollbar = window.Scrollbar;
-
-Scrollbar.init(document.querySelector('body'));
-
-getNewYearText.innerHTML(`@${newYear} From Hwan - VietNam With Luv`)
+getNewYearText.innerHTML(`@${newYear} From Hwan - VietNam With Luv`);

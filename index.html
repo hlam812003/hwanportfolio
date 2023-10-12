@@ -22,6 +22,18 @@
 </head>
 <body>
     <!-- Loading Khi Vào Trang Web -->
+    <div class="preloader">        
+        <div class="honeycomb">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="preloader__text">Đang Load...</div>
+    </div>
     <!-- header và navbar -->
     <header class="header" id="header">
         <nav class="nav container padd-15">
@@ -94,7 +106,7 @@
                 <div class="row">
                     <div class="about-img padd-15">
                         <img style="width: 180px;" src="./assets/img/programmer.png" alt="Hwan" class="tool-img">
-                        <span class="hwan-title" style="margin-left: 15%;">Hwan - 19 tủi 😊</span>
+                        <span class="hwan-title" style="margin-left: 15%;">Hwan - 20 tủi 😊</span>
                     </div>
                     <div class="about-content padd-15">
                         <div class="rounded">
@@ -286,8 +298,8 @@
                                         <h3 class="timeline-date">
                                             <i class="lni lni-calendar"></i> 2022 - Hiện tại
                                         </h3>
-                                        <h3 class="timeline-title">Web Developer</h3>
-                                        <p class="timeline-text">HTML, CSS, JAVASCRIPT, REACTJS, ANGULA, NEXTJS, PHP, NODEJS...</p>
+                                        <h3 class="timeline-title">FullStack Web Developer</h3>
+                                        <p class="timeline-text">HTML, CSS, JAVASCRIPT, REACTJS, NEXTJS, NODEJS...</p>
                                     </div>
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
@@ -303,7 +315,7 @@
                                             <i class="lni lni-calendar"></i> 2018 - 2020
                                         </h3>
                                         <h3 class="timeline-title">Back-End Developer</h3>
-                                        <p class="timeline-text">PHP, NODEJS, MONGODB, MYSQL, ...</p>
+                                        <p class="timeline-text">PHP, NODEJS, MONGODB, MYSQL,...</p>
                                     </div>
                                 </div>
                             </div>
@@ -347,6 +359,17 @@
                         <span class="term">Bài tập 2</span>
                         <h3 class="portfolio-item-title">A web page for a survey</h3>
                         <a href="https://baitap2-app.onrender.com"><span class="more-button">&hellip;</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15" data-category="coban">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./assets/img/3.svg" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Bài tập 3</span>
+                        <h3 class="portfolio-item-title">A web page for downloading music from a store (Ex: 7.1, 7.2 and 9.1)</h3>
+                        <a href="https://baitap3-app.onrender.com"><span class="more-button">&hellip;</span></a>
                     </div>
                 </div>
                 <!-- <div class="portfolio-item padd-15" data-category="caocap">
@@ -615,7 +638,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -663,41 +686,41 @@
                 });
         }
 
-        ScrollReveal({ 
-            reset: true,
-            distance: '60px',
-            duration: 2500,
-            delay: 100 
-        });
+        // ScrollReveal({ 
+        //     reset: true,
+        //     distance: '60px',
+        //     duration: 2500,
+        //     delay: 100 
+        // });
 
-        // ScrollReveal().reveal('.header', { delay: 300, origin: 'top' });
-        ScrollReveal().reveal('.home .intro .author-name', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.home .intro p', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.home .intro .type', { delay: 300, origin: 'left' }); 
-        ScrollReveal().reveal('.home .intro img', { delay: 300, origin: 'top' });
-        ScrollReveal().reveal('.home .intro .social-icons', { delay: 300, origin: 'right' });
-        ScrollReveal().reveal('.home .intro .btn-ripple', { delay: 300, origin: 'right' });
-        ScrollReveal().reveal('.home .intro .scroll-down', { delay: 300, origin: 'bottom' });
-        ScrollReveal().reveal('.about .section-title', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.about .about-img', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.about .about-content', { delay: 300, origin: 'right' });
-        ScrollReveal().reveal('.about .fact-item', { delay: 300, origin: 'bottom' });
-        ScrollReveal().reveal('.services .section-title', { delay: 300, origin: 'top' });
-        ScrollReveal().reveal('.services .service-item', { delay: 300, origin: 'bottom'});
-        ScrollReveal().reveal('.services .text', { delay: 300, origin: 'bottom'});
-        ScrollReveal().reveal('#kinhnghiem .section-title', { delay: 300, origin: 'left'});
-        ScrollReveal().reveal('.education .timeline-box .timeline', { delay: 300, origin: 'left'});
-        ScrollReveal().reveal('.experience .timeline-box .timeline', { delay: 300, origin: 'right'});
-        ScrollReveal().reveal('.portfolio .section-title', { delay: 300, origin: 'top'});
-        ScrollReveal().reveal('.portfolio .portfolio-filter', { delay: 300, origin: 'left'});
-        ScrollReveal().reveal('.portfolio .portfolio-item', { delay: 300, origin: 'bottom', interval: 6});
-        ScrollReveal().reveal('.our-clients .section-title', { delay: 300, origin: 'left'});
-        ScrollReveal().reveal('.our-clients .swiper-wrapper', { delay: 300, origin: 'right'});
-        ScrollReveal().reveal('.book-resources-container .section-title', { delay: 300, origin: 'top'});
-        ScrollReveal().reveal('.book-resources-container .resources-item', { delay: 300, origin: 'bottom'});
-        ScrollReveal().reveal('.contact .section-title', { delay: 100, origin: 'left'});
-        ScrollReveal().reveal('.contact .contact-box .contact-data', { delay: 400, origin: 'left'});
-        ScrollReveal().reveal('.contact .contact-inputs', { delay: 400, origin: 'right'});
+        // // ScrollReveal().reveal('.header', { delay: 300, origin: 'top' });
+        // ScrollReveal().reveal('.home .intro .author-name', { delay: 300, origin: 'left' });
+        // ScrollReveal().reveal('.home .intro p', { delay: 300, origin: 'left' });
+        // ScrollReveal().reveal('.home .intro .type', { delay: 300, origin: 'left' }); 
+        // ScrollReveal().reveal('.home .intro img', { delay: 300, origin: 'top' });
+        // ScrollReveal().reveal('.home .intro .social-icons', { delay: 300, origin: 'right' });
+        // ScrollReveal().reveal('.home .intro .btn-ripple', { delay: 300, origin: 'right' });
+        // ScrollReveal().reveal('.home .intro .scroll-down', { delay: 300, origin: 'bottom' });
+        // ScrollReveal().reveal('.about .section-title', { delay: 300, origin: 'left' });
+        // ScrollReveal().reveal('.about .about-img', { delay: 300, origin: 'left' });
+        // ScrollReveal().reveal('.about .about-content', { delay: 300, origin: 'right' });
+        // ScrollReveal().reveal('.about .fact-item', { delay: 300, origin: 'bottom' });
+        // ScrollReveal().reveal('.services .section-title', { delay: 300, origin: 'top' });
+        // ScrollReveal().reveal('.services .service-item', { delay: 300, origin: 'bottom'});
+        // ScrollReveal().reveal('.services .text', { delay: 300, origin: 'bottom'});
+        // ScrollReveal().reveal('#kinhnghiem .section-title', { delay: 300, origin: 'left'});
+        // ScrollReveal().reveal('.education .timeline-box .timeline', { delay: 300, origin: 'left'});
+        // ScrollReveal().reveal('.experience .timeline-box .timeline', { delay: 300, origin: 'right'});
+        // ScrollReveal().reveal('.portfolio .section-title', { delay: 300, origin: 'top'});
+        // ScrollReveal().reveal('.portfolio .portfolio-filter', { delay: 300, origin: 'left'});
+        // ScrollReveal().reveal('.portfolio .portfolio-item', { delay: 300, origin: 'bottom', interval: 6});
+        // ScrollReveal().reveal('.our-clients .section-title', { delay: 300, origin: 'left'});
+        // ScrollReveal().reveal('.our-clients .swiper-wrapper', { delay: 300, origin: 'right'});
+        // ScrollReveal().reveal('.book-resources-container .section-title', { delay: 300, origin: 'top'});
+        // ScrollReveal().reveal('.book-resources-container .resources-item', { delay: 300, origin: 'bottom'});
+        // ScrollReveal().reveal('.contact .section-title', { delay: 100, origin: 'left'});
+        // ScrollReveal().reveal('.contact .contact-box .contact-data', { delay: 400, origin: 'left'});
+        // ScrollReveal().reveal('.contact .contact-inputs', { delay: 400, origin: 'right'});
     </script>
     <script>
         // const scrollToTop = document.querySelector('.scroll__top');
