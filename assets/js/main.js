@@ -2,9 +2,6 @@ const themeBg = document.querySelector('#theme-button');
 const themeModal = document.querySelector('.customize-theme');
 const fontSizes = document.querySelectorAll('.choose-size span');
 var root = document.querySelector(':root');
-// const Bg1 = document.querySelector('.bg-1');
-// const Bg2 = document.querySelector('.bg-2');
-// const Bg3 = document.querySelector('.bg-3');
 const navMenu = document.querySelector('#nav-menu');
 const navToggle = document.querySelector('#nav-toggle');
 const navCloseBtn = document.querySelector('#nav-close');
@@ -12,6 +9,7 @@ const getNewYearText = document.querySelector('.footer-copyright');
 const body = document.body;
 const preloader = document.querySelector('.preloader');
 const newYear = new Date().getFullYear();
+const checkingModal = document.querySelector('.checking-modal');
 
 body.classList.add('no-scroll');
 
@@ -84,6 +82,17 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+function showCheckingModal() {
+  checkingModal.classList.add('active');
+}
+
+const modalCloseBtn = document.querySelector('.checking-modal-close-btn');
+modalCloseBtn.addEventListener('click', () => {
+  checkingModal.classList.remove('active'); 
+});
+
+setTimeout(showCheckingModal, 45000);
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {

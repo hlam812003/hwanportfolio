@@ -588,7 +588,8 @@ h3 {
   text-align: center;
 }
 
-.service-modal {
+.service-modal,
+.checking-modal {
   z-index: 999999;
   position: fixed;
   width: 100%;
@@ -603,16 +604,19 @@ h3 {
   transition: .3s ease;
 }
 
-.service-modal.active {
+.service-modal.active,
+.checking-modal.active {
   visibility: visible;
   opacity: 1;
 }
 
-.service-modal h3 {
+.service-modal h3,
+.checking-modal h3 {
   color: black;
 }
 
-.service-modal-body {
+.service-modal-body,
+.checking-modal-body {
   position: relative;
   background: #fff;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
@@ -624,7 +628,8 @@ h3 {
   border-bottom: 3px solid red;
 }
 
-.service-modal-body .modal-close-btn {
+.service-modal-body .modal-close-btn,
+.checking-modal-body .checking-modal-close-btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -633,26 +638,31 @@ h3 {
   transition: transform 0.25s ease;
 }
 
-.service-modal-body .modal-close-btn:hover {
+.service-modal-body .modal-close-btn:hover,
+.checking-modal-body .modal-close-btn:hover {
   transform: scale(1.4);
 }
 
-.service-modal-body p {
+.service-modal-body p,
+.checking-modal-body p {
   color: black;
   font-size: 1.3em;
   font-weight: 600;
   margin: 15px 0 10px;
 }
 
-.service-modal-body ul li {
+.service-modal-body ul li,
+.checking-modal-body ul li {
   margin-top: 15px;
 }
 
-.service-modal-body ul li i {
+.service-modal-body ul li i,
+.checking-modal-body ul li i {
   color: rgb(5, 202, 5);
 }
 
-.service-modal-body p:nth-of-type(2) {
+.service-modal-body p:nth-of-type(2),
+.checking-modal-body p:nth-of-type(2) {
   text-align: center;
   font-size: 1.4rem;
   margin-top: 8%;
