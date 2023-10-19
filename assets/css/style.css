@@ -588,7 +588,20 @@ h3 {
   text-align: center;
 }
 
-.service-modal,
+.service-modal {
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+
 .checking-modal {
   z-index: 999999;
   position: fixed;
