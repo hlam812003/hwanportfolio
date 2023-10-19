@@ -92,7 +92,7 @@ modalCloseBtn.addEventListener('click', () => {
   checkingModal.classList.remove('active'); 
 });
 
-setTimeout(showCheckingModal, 45000);
+setTimeout(showCheckingModal, 1000);
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {
